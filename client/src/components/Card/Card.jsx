@@ -26,7 +26,7 @@ const Card = ({ item }) => {
         </div>
         <h2>{item?.attributes.title}</h2>
         <div className="prices">
-          <h3>Rs {item.oldPrice || item?.attributes.price + 20}</h3>
+          <h3>Rs {item.oldPrice || item?.attributes.price + 210}</h3>
           <h3>Rs {item?.attributes.price}</h3>
         </div>
       </div>
