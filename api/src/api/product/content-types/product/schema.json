@@ -66,6 +66,9 @@
         "featured",
         "trending"
       ]
+    },
+    "oldPrice": {
+      "type": "decimal"
     }
   }
 }
