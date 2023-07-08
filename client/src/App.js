@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
+import ContactPage from "./pages/ContactPage/ContactPage";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import "./app.scss"
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/ContactPage",
+        element: <ContactPage />,
       },
       {
         path: "/products/:id",

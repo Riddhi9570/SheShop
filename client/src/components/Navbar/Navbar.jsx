@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+/* import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"; */
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.scss"
 import Cart from "../Cart/Cart";
 import { useSelector } from "react-redux";
@@ -26,34 +26,34 @@ const Navbar = () => {
             <KeyboardArrowDownIcon />
           </div> */}
           <div className="item">
-            <Link className ="link" to="/products/1">Women</Link>
+            <NavLink className ="link" to="/products/1">Women</NavLink>
           </div>
           <div className="item">
-            <Link className ="link" to="/products/2">Men</Link>
+            <NavLink className ="link" to="/products/2">Men</NavLink>
           </div>
           <div className="item">
-            <Link className ="link" to="/products/3">Children</Link>
+            <NavLink className ="link" to="/products/3">Children</NavLink>
           </div>
         </div>
         <div className="center">
-          <Link className ="link" to="/">SHESHOP</Link>
+          <NavLink className ="link" to="/">SHESHOP</NavLink>
         </div>
         <div className="right">
           <div className="item">
-            <Link className ="link" to="/">Homepage</Link>
+            <NavLink className ="link" to="/" activeClassName ="active">Home</NavLink>
           </div>
           <div className="item">
-            <Link className ="link" to="/">About</Link>
+            <NavLink className ="link" to="/">About</NavLink>
           </div>
           <div className="item">
-            <Link className ="link" to="/">Contact</Link>
+            <NavLink className ="link" to="/ContactPage">Contact</NavLink>
           </div>
-          <div className="item">
-            <Link className ="link" to="/">Stores</Link>
-          </div>
+        {/* <div className="item">
+            <NavLink className ="link" to="/">Stores</NavLink>
+          </div> */}
           <div className="icons">
             <SearchIcon/>
-            <PersonOutlineOutlinedIcon/>
+          {/*<PersonOutlineOutlinedIcon/> */}
             <FavoriteBorderOutlinedIcon/>
             <div className="cartIcon" onClick={()=>setOpen(!open)}>
               <ShoppingCartOutlinedIcon/>

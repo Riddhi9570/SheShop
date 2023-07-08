@@ -88,9 +88,9 @@ const Product = () => {
               <div className="item">
                 <FavoriteBorderIcon /> ADD TO WISH LIST
               </div>
-              <div className="item">
+            {/*<div className="item">
                 <BalanceIcon /> ADD TO COMPARE
-              </div>
+              </div> */}
             </div>
             <div className="info">
               <span>Vendor: Polo</span>
