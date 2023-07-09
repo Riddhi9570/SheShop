@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import Wishlist from "./pages/Wishlist/Wishlist";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import "./app.scss"
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/ContactPage",
         element: <ContactPage />,
+      },
+      {
+        path: "/Wishlist",
+        element: <Wishlist />,
       },
       {
         path: "/products/:id",
