@@ -3,7 +3,6 @@ import { useState } from "react";
 import "./Product.scss";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import BalanceIcon from "@mui/icons-material/Balance";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -91,9 +90,6 @@ const Product = () => {
               <div className="item">
                 <FavoriteBorderIcon /> ADD TO WISH LIST
               </div>
-            {/*<div className="item">
-                <BalanceIcon /> ADD TO COMPARE
-              </div> */}
             </div>
             <div className="info">
               <span>Vendor: Polo</span>
