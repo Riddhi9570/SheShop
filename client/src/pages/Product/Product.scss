@@ -32,12 +32,17 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 
     .price{
       font-size: 30px;
       color: #2879fe;
       font-weight: 500;
+    }
+
+    .oldPrice{
+      color: gray;
+      text-decoration: line-through;
     }
 
     p{

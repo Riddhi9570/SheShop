@@ -54,6 +54,10 @@ const Product = () => {
           <div className="right">
             <h1>{data?.attributes?.title}</h1>
             <span className="price">Rs {data?.attributes?.price}</span>
+            { data?.attributes?.oldPrice ?
+            <span className ="oldPrice">Rs {data?.attributes?.oldPrice}</span>
+            : ("") }
+
             <p>{data?.attributes?.desc}</p>
             <div className="quantity">
               <button

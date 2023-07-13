@@ -47,9 +47,9 @@ const Footer = () => {
             © Copyright 2023. All Rights Reserved
           </span>
         </div>
-        <div className="right">
+{/*      <div className="right">
           <img src="/img/payment.png" alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
