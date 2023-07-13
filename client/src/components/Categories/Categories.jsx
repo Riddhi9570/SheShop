@@ -1,6 +1,6 @@
 import React from "react";
 import "./Categories.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Categories = () => {
   return (
@@ -12,9 +12,9 @@ const Categories = () => {
             alt=""
           />
           <button>
-            <Link className="link" to="/products/1">
+            <NavLink className="link" to="/products/1">
               Sale
-            </Link>
+            </NavLink>
           </button>
         </div>
         <div className="row">
@@ -23,9 +23,9 @@ const Categories = () => {
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <NavLink to="/products/1" className="link">
               Women
-            </Link>
+            </NavLink>
           </button>
         </div>
       </div>
@@ -37,9 +37,9 @@ const Categories = () => {
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <NavLink to="/products/1" className="link">
               New Season
-            </Link>
+            </NavLink>
           </button>
         </div>
       </div>
@@ -52,9 +52,9 @@ const Categories = () => {
                 alt=""
               />
               <button>
-                <Link to="/products/2" className="link">
+                <NavLink to="/products/2" className="link">
                   Men
-                </Link>
+                </NavLink>
               </button>
             </div>
           </div>
@@ -66,9 +66,9 @@ const Categories = () => {
                 alt=""
               />
               <button>
-                <Link to="/products/5" className="link">
+                <NavLink to="/products/5" className="link">
                   Accessories
-                </Link>
+                </NavLink>
               </button>
             </div>
           </div>
@@ -79,9 +79,9 @@ const Categories = () => {
             alt=""
           />
           <button>
-            <Link to="/products/4" className="link">
+            <NavLink to="/products/4" className="link">
               Shoes
-            </Link>
+            </NavLink>
           </button>
         </div>
       </div>

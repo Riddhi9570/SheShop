@@ -1,11 +1,11 @@
 import React from "react";
 import "./Card.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Card = ({ item }) => {
   console.log(item);
   return (
-    <Link className="link" to={`/product/${item.id}`}>
+    <NavLink className="link" to={`/product/${item.id}`}>
       <div className="card">
         <div className="image">
           {item?.attributes.isNew && <span>New Season</span>}
@@ -23,7 +23,7 @@ const Card = ({ item }) => {
           <h3>Rs {item?.attributes.price}</h3>
         </div>
       </div>
-    </Link>
+    </NavLink>
   );
 };
 

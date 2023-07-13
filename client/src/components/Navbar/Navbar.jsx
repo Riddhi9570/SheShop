@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         <div className="right">
           <div className="item">
-            <NavLink className ="link" to="/" activeClassName ="active">Home</NavLink>
+            <NavLink className ="link" to="/">Home</NavLink>
           </div>
 {/*        <div className="item">
             <NavLink className ="link" to="/">About</NavLink>
