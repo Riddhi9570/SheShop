@@ -69,6 +69,9 @@
     },
     "oldPrice": {
       "type": "decimal"
+    },
+    "additionalInfo": {
+      "type": "text"
     }
   }
 }

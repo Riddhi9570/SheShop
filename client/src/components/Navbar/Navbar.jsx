@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 /* import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"; */
-import SearchIcon from "@mui/icons-material/Search";
+/* import SearchIcon from "@mui/icons-material/Search"; */
 /* import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined"; */
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -42,9 +42,9 @@ const Navbar = () => {
           <div className="item">
             <NavLink className ="link" to="/" activeClassName ="active">Home</NavLink>
           </div>
-          <div className="item">
+{/*        <div className="item">
             <NavLink className ="link" to="/">About</NavLink>
-          </div>
+          </div> */}
           <div className="item">
             <NavLink className ="link" to="/ContactPage">Contact</NavLink>
           </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
             <NavLink className ="link" to="/">Stores</NavLink>
           </div> */}
           <div className="icons">
-            <SearchIcon/>
+          {/* <SearchIcon/> */}
           {/*<PersonOutlineOutlinedIcon/> */}
             <NavLink to="/Wishlist"> <FavoriteBorderOutlinedIcon/> </NavLink>
             <div className="cartIcon" onClick={()=>setOpen(!open)}>

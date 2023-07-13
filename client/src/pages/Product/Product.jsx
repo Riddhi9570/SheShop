@@ -32,6 +32,7 @@ const Product = () => {
                 alt=""
                 onClick={(e) => setSelectedImg("img")}
               />
+              { data?.attributes?.img2?.data?.attributes?.formats?.medium?.url ? (
               <img
                 src={
                   data?.attributes?.img2?.data?.attributes?.formats?.medium?.url
@@ -39,6 +40,7 @@ const Product = () => {
                 alt=""
                 onClick={(e) => setSelectedImg("img2")}
               />
+              ) : ("") }
             </div>
             <div className="mainImg">
               <img
@@ -96,11 +98,10 @@ const Product = () => {
             </div>
             <hr />
             <div className="info">
-              <span>DESCRIPTION</span>
+              <span>DESCRIPTION : {data?.attributes?.desc}</span>
               <hr />
-              <span>ADDITIONAL INFORMATION</span>
+              <span>ADDITIONAL INFORMATION : {(data?.attributes?.additionalInfo) ? data?.attributes?.additionalInfo : " NA"} </span>
               <hr />
-              <span>FAQ</span>
             </div>
           </div>
         </>
