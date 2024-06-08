@@ -29,7 +29,7 @@ Sheshop is an e-commerce platform that offers users the ability to browse produc
 
 ## Steps
 
-1. **Fork thr repository:**
+1. **Fork the repository:**
    
    ![image](https://github.com/Riddhi9570/SheShop/assets/72887868/14344507-0b36-4bf1-b39d-014198d7849e)
    
