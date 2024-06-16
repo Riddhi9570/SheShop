@@ -65,7 +65,6 @@ Sheshop is an e-commerce platform that offers users the ability to browse produc
     DATABASE_FILENAME = .tmp/data.db
     JWT_SECRET = your_jwt_secret_here
     STRIPE_KEY = your_stripe_key_here
-    CLIENT_URL = http://localhost:3000
    ```
    
   Create a '.env' file in the 'client' directory and add the following:
